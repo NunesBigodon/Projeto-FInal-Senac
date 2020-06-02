@@ -274,8 +274,8 @@ h2:after {
 }
 
 .app-screen {
-    width: 40%;
-    /*float: left;*/
+    width: 22%;
+    float: left;
 }
 
 .step {
@@ -317,4 +317,54 @@ h2:after {
     display: block;
     height:0;
     visibility:hidden;
-    }
+}
+
+/* ----------------------------------------------- */
+/* Seção Testemunhos (Section Testimonials) */
+/* ----------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/banner.jpg);
+    background-size: cover; /*preencher toda a largura da janela do navegador*/
+    color: #fff; /*cor da fonte*/
+    background-attachment: fixed;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed; /*deixa a imagem fica no fundo, a imagem não acompanha a barra de rolagem*/
+}   
+
+blockquote {
+    padding: 2%;
+    font-style: italic; /*Deve ser importado a versão "italic" da fonte para poder usar*/
+    line-height: 145%; /*Altura da linha do texto*/
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+
+}
