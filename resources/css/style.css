@@ -252,32 +252,30 @@ h2:after {
     transform: scale(1.03); /*escala da imagem com valor padrão*/
 }
 
-.section-photos {
-    padding: 0;
-}
+/* secao lista de passos section steps */
 
 .section-steps {
     background-color: #f4f4f4;
 }
 
-/*Regra para ambos os boxes/containers*/
 .steps-box {
 }
 
 .steps-box:first-child {
-    margin-top: 30px;
-    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
-    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+    text-align: right;
+    padding-right: 3%;
+    text-align: right;
 }
 
 .steps-box:last-child {
+    padding-left: 3%;
     text-align: left;
-    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
     margin-top: 70px;
 }
 
 .app-screen {
-    width: 40%; /*40% do tamanho do box/container*/
+    width: 40%;
+    /*float: left;*/
 }
 
 .step {
@@ -285,22 +283,21 @@ h2:after {
 }
 
 .step div {
-    color: #e67e22; /*Define cor da fonte*/
-    border: 2px solid #e67e22; /*define uma borda laranja*/
-    display: inline-block;/*para permitir containers lado a lado*/
-    border-radius: 50%; /*Arredonda as bordas*/
-    height: 55px;/*Define altura*/
-    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
-    /*Ajustando o texto interno*/
-    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
-    padding: 5px;/*espaço entre texto e borda do container*/
+    color: #e67e22; /*Defidindo cor da fonte */
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
     float: left;
     font-size: 150%;
-    margin-right: 30px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+    margin-right: 30px;
 }
 
 .btn-app img {
-    height:50px;
+    height: 50px;
     width: auto;
     margin-right: 10px;
 }
@@ -311,13 +308,13 @@ h2:after {
 
 .clearfix {
     zoom:1;
-    }
+}
     
-    /*limpa o float depois de um elemento.*/
-    .clearfix:after {
-        content: '.';
-        clear: both;
-        display: block;
-        height:0;
-        visibility:hidden;
+/*limpa o float depois de um elemento.*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
     }
